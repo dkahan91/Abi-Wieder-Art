@@ -1,0 +1,66 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+    
+<head runat="server">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Template 1</title>
+    <link href="./style1.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="shadow_left">&nbsp;</td>
+    <td class="header_column">
+	<table width="100%" border="0" cellspacing="10" cellpadding="0">
+      <tr>
+        <td class="logo_area"><img src="/Images1/Logo.png" /></td>
+        
+          <td><p id="user" class="login" runat="server"></p><div><a id="cart" style="color:white;" href="/cart.aspx">CART</a></div></td>
+      </tr>
+    </table></td>
+    <td class="shadow_right">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="horizontal_column">&nbsp;</td>
+    <td class="horizontal_center"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="linkcontainer">
+      <tr>
+        <td><div class="navigation"><a href="/Home.aspx" class="main_link">Home</a></div></td>
+        <td><div class="navigation"><a href="/Product Categories.aspx" class="main_link">Shop</a></div></td>
+        <td><div class="navigation"><a href="#" class="main_link">About</a></div></td>
+        <td><div class="navigation"><a href="#" class="main_link">Gallery</a></div></td>
+        <td><div class="navigation"><a href="/Login.aspx" class="main_link">Login</a></div></td>
+      </tr>
+    </table></td>
+    <td class="horizontal_column">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="shadow_left">&nbsp;</td>
+    <td class="below_header">Unique Art Shop</td>
+    <td class="shadow_right">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="shadow_left">&nbsp;</td>
+    
+        
+        <td class="main_content_box">
+        
+       <!-- <table border="0" cellspacing="0" cellpadding="0">
+    
+        </table>-->
+        <div class="main_content">
+        <form id="form1" runat="server">           
+            <div id="main-content"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder></div>
+        </form>
+        <p id="results" runat="server">Testing 12344566</p>
+        &nbsp;</td>
+        </table>
+</body>
+</html>

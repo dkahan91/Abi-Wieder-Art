@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+    
+<head runat="server">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Template 1</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="shadow_left">&nbsp;</td>
+    <td class="header_column">
+	<table width="100%" border="0" cellspacing="10" cellpadding="0">
+      <tr>
+        <td class="logo_area"><img src="/Images1/Logo.png" /></td>
+        <td width="300">
+          <form id="form1" name="form1" method="post" action="">
+		  	Search the website <br />
+            <input name="search_text" type="text" id="search_text" />
+            <input type="submit" name="Submit" value="Search" />
+          </form>
+          </td>
+      </tr>
+    </table></td>
+    <td class="shadow_right">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="horizontal_column">&nbsp;</td>
+    <td class="horizontal_center"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="linkcontainer">
+      <tr>
+        <td><div class="navigation"><a href="/Home.aspx" class="main_link">Home</a></div></td>
+        <td><div class="navigation"><a href="/Product Categories.aspx" class="main_link">Shop</a></div></td>
+        <td><div class="navigation"><a href="#" class="main_link">About</a></div></td>
+        <td><div class="navigation"><a href="#" class="main_link">Gallery</a></div></td>
+        <td><div class="navigation"><a href="/Login.aspx" class="main_link">Login</a></div></td>
+      </tr>
+    </table></td>
+    <td class="horizontal_column">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="shadow_left">&nbsp;</td>
+    <td class="below_header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  sint occaecat cupidatat non proident, sunt in culpa qui officia  deserunt mollit anim id est laborum</td>
+    <td class="shadow_right">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="shadow_left">&nbsp;</td>
+    <td class="main_content_box"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <form id="form1" runat="server">
+        <div>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+       
+    </form>
+</body>
+</html>
