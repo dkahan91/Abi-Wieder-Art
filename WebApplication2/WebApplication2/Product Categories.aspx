@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
         <h1>Product Categories</h1><br /><br />
-    <h2>Choose from one of the categories below to start shopping!</h2>
+    <h2>Choose from one of the categories below and start shopping!</h2>
    <div id="category" runat="server" style="text-align:center;font-size:16px;"></div>
           <div><a href="WebForm1.aspx">WebForm1.aspx</a>
         <a href="Product%20List.aspx">Product List.aspx</a></div>
