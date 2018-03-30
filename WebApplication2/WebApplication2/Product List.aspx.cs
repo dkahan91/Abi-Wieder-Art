@@ -20,6 +20,14 @@ namespace WebApplication2
                 "INNER JOIN dbo.Product_Category ON dbo.Product_Table.[ID] = dbo.Product_Category.[Product ID] " +
                 "INNER JOIN dbo.Product_Images ON dbo.Product_Table.[ID] =dbo.Product_Images.[Product ID]" +
                 "WHERE dbo.Product_Category.[Category ID]=" + productsID+";";
+            string query2 = "SELECT ID,Name FROM dbo.Categories WHERE ID LIKE " + productsID + ";";
+            using (SqlDataReader productcat = SQLHelper.ExecuteQuery(query2))
+            {
+                while (productcat.Read())
+                {
+                    list.InnerHtml = "<h2>Products of " + productcat[1]+"<h2>";
+                }
+            }
 
             using (SqlDataReader productList = SQLHelper.ExecuteQuery(query1))
             {
