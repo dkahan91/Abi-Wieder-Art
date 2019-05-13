@@ -69,9 +69,11 @@
     <Content Include="cart.aspx" />
     <Content Include="Images1\clayglobe1.jpg" />
     <Content Include="Images1\clayglobe2.jpg" />
+    <Content Include="Images1\crop_banner.png" />
     <Content Include="Images1\famouspeople.jpg" />
     <Content Include="Images1\give_light_oldman.jpg" />
     <Content Include="Images1\give_light_oldwoman.jpg" />
+    <Content Include="Images1\Half-banner.png" />
     <Content Include="Images1\Illustrated_Manuscript1.jpg" />
     <Content Include="Images1\Illustrated_Manuscript2.jpg" />
     <Content Include="Images1\Illustrated_Manuscript3.jpg" />
@@ -84,16 +86,22 @@
     <Content Include="Images1\Meah_Shearim.jpg" />
     <Content Include="Images1\oilpainting.jpg" />
     <Content Include="Images1\paintedart.jpg" />
+    <Content Include="Images1\thick_banner.png" />
+    <Content Include="Images1\Western-wall-banner.png" />
     <Content Include="Images1\Western_wall.jpg" />
     <Content Include="Images1\Western_wall2.jpg" />
+    <Content Include="Images1\western_wall_banner.jpg" />
     <Content Include="JavaScript.js" />
     <Content Include="Loginold.aspx" />
     <Content Include="Logo.png" />
+    <Content Include="Product-Shop.aspx" />
     <Content Include="Testwebmaster.aspx" />
     <Content Include="WebForm5.aspx" />
     <Content Include="WebFormtestlogin.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
+    <None Include="Properties\PublishProfiles\abiwieder-art - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\abiwieder-art - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\abiwiederart - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\abiwiederart - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -129,6 +137,13 @@
     </Compile>
     <Compile Include="Loginold.aspx.designer.cs">
       <DependentUpon>Loginold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product-Shop.aspx.cs">
+      <DependentUpon>Product-Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product-Shop.aspx.designer.cs">
+      <DependentUpon>Product-Shop.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Login.aspx.cs">

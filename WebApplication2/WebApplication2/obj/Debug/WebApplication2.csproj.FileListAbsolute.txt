@@ -16,3 +16,23 @@ C:\Users\dkaha\Documents\Work Avenue\WebApplication2\Abi-Wieder-Art\WebApplicati
 C:\Users\dkaha\Documents\Work Avenue\WebApplication2\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
 C:\Users\dkaha\Documents\Work Avenue\WebApplication2\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\dkaha\Documents\Work Avenue\WebApplication2\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\bin\WebApplication2.dll
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+\\Mac\Home\Documents\Computer training\Web app Sep 2018\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\bin\WebApplication2.dll
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+\\Mac\Home\Documents\Computer training\Web app May 2019\Abi-Wieder-Art\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb

@@ -1,9 +1,27 @@
 ﻿body {
-    margin: 0px;
-    background-color: #333333;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    margin: 0;
+    background-color: white;
+    font-family:  Lucida, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
 }
+
+.login{
+    color: white;
+    padding: 15px 15px 15px 15px;
+    margin-bottom:0;
+}
+
+#cart {
+    color: white;
+}
+
+
+div.login {
+    color: white;
+}
+
+
 
 table.linkcontainer td {
     background-color: #000000;
@@ -13,10 +31,11 @@ table.linkcontainer td {
 }
 
 td.logo_area {
+    text-align:left;
     border-top-width: 0px;
-    border-right-width: 5px;
+    border-right-width: 0px;
     border-bottom-width: 0px;
-    border-left-width: 0px;
+    border-left-width: 5px;
     border-top-style: solid;
     border-right-style: solid;
     border-bottom-style: solid;
@@ -33,7 +52,7 @@ td.middle_spacer {
 }
 
 td.shadow_right {
-    background-image: url(../images_template1/border_shadow_l.jpg);
+    /*background-image: url(../images_template1/border_shadow_l.jpg);*/
     background-repeat: repeat-y;
     background-position: left;
 }
@@ -114,6 +133,7 @@ td.header_column {
     font-size: large;
     background-image: url(../images_template1/header2_bg.jpg);
     background-position: top;
+    text-align:right;
 }
 
 td.left_content {
@@ -159,5 +179,209 @@ div.navigation {
     text-align: center;
 }
 h1{
+    font-family:allura;
+    font-size: 50px;
+    padding-left: 20px;
     text-align:center;
 }
+
+.banner{
+    width:100%;
+   //height: 200px;
+}
+
+.main_frame {
+    padding-top: 30px;
+    padding-bottom:100px;
+    width: 900px;
+    margin: auto;
+}
+.table_format {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+    .table_format td {
+        width: 250px;
+        height: 270px;
+        vertical-align: top;
+        padding: 40px 25px 10px 25px;
+    }
+.table_format div {
+    width: 250px;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+.pic {
+    border: 1px solid #fff;
+    float: left;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border: #CBB485 ridge 11px;
+    /*-webkit-box-shadow: 5px 5px 5px #111;
+    box-shadow: 5px 5px 5px #111;*/
+}
+.grow img {
+    height: 250px;
+    width: 250px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+.grow img:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tab_format a {
+        display:block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight:bold;
+    }
+
+
+.table_format a {
+    text-transform: uppercase;
+}
+    .tab_format div:hover {
+        color:grey;
+    }
+
+    .tab_format img:hover {
+        opacity: 0.7;
+    }
+
+.list_format div {
+    border: 1px solid gray;
+    height:170px;
+    width:750px;
+    margin:5px;
+    position:relative;
+}
+.list_format td {
+ padding:10px;
+}
+
+.list_title{
+    font-size:20px;
+    padding:10px;
+}
+
+
+.list_desc {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    padding: 10px;
+}
+
+.list_desc p {
+    font-size: 13px;
+}
+    .list_format img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 10px;
+}
+.list_format input {
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    color: black;
+    bottom: 10px;
+    right: 10px;
+}
+.list_price {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Verdana';
+    color: black;
+    bottom: 10px;
+    left: 160px;
+}
+.view_product {
+    width:800px;
+    height:300px;
+    position:relative;
+}
+
+.view_product img {
+    position:absolute;
+    left:0;
+
+}
+
+.view_price {
+    position: absolute;
+    left: 300px;
+    bottom: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Verdana';
+    color: black;
+}
+
+.view_desc {
+    position: absolute;
+    left: 300px;
+    top:5px;
+    padding: 10px;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-brand img{
+    border: 2px solid black;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    /*padding: 15px;*/    
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+
+    

@@ -3,3 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"><p>Yeghaaa!!</p>
 </asp:Content>
+<!--Search for a product <br />
+              <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <input type="submit" name="Submit" value="Search" runat="server"/>-->

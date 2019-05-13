@@ -3,8 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"><p>Yeghaaa!!</p>
 
-        <p>This is the <strong>Product Page:</strong></p>
+        <p>This is the <strong>Product Page:</strong>
+    </p>
         <div id="product_placeholder" runat="server">
         </div>
-
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add to Cart" />
 </asp:Content>

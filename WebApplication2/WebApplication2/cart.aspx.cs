@@ -13,12 +13,12 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            using (SqlDataReader cart = SQLHelper.ExecuteQuery("SELECT * FROM dbo.Cart3"))
+
+            using (SqlDataReader cart = SQLHelper.ExecuteQuery("SELECT Product_Table.[Product Name],Product_Table.Price FROM dbo.Product_Table INNER JOIN dbo.Cart3 ON dbo.Product_Table.ID = dbo.Cart3.[Product ID] WHERE dbo.Cart3.[Cutomer ID]=" + Session["ID"] + ";"))
             {
                 while (cart.Read())
                 {
-                    cartItems.InnerHtml += " "+ cart[0] +" " + cart[1] + cart[2]+"<br>";
+                    cartItems.InnerHtml += " " + cart[0] + "£" + cart[1]  + "<br>";
                 }
             }
         }

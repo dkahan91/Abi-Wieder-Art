@@ -15,7 +15,7 @@ namespace WebApplication2
             int productsID = int.Parse(Request.QueryString["ID"]);
             int a = 3;
             list.InnerHtml = "ID is " + productsID;
-            string query1 = "SELECT Product_Table.[Product Name],Product_Table.ID, Product_Images.[Is Main Image]" +
+            string query1 = "SELECT Product_Table.[Product Name],Product_Table.Price, Product_Table.Description,Product_Table.ID, Product_Images.[Is Main Image]" +
                 "FROM dbo.Product_Table " +
                 "INNER JOIN dbo.Product_Category ON dbo.Product_Table.[ID] = dbo.Product_Category.[Product ID] " +
                 "INNER JOIN dbo.Product_Images ON dbo.Product_Table.[ID] =dbo.Product_Images.[Product ID]" +
@@ -28,14 +28,23 @@ namespace WebApplication2
                     list.InnerHtml = "<h2>Products of " + productcat[1]+"<h2>";
                 }
             }
+            int i = 0;
+            query.InnerHtml += "<table class='list_format'>";
+            string description = "test";
+            string desc_mod;
 
             using (SqlDataReader productList = SQLHelper.ExecuteQuery(query1))
             {
                 while (productList.Read())
-                    query.InnerHtml += "<a href = 'Product Page.aspx?ID=" + productList["ID"] + "'>" + productList["Product Name"] + "<img src="+productList["Is Main Image"]+ "></ a ><br>";
-
-            }
+                {
+                    //query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src="+ productList["Is Main Image"]+ "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p>"+ productList["Product Name"] + "</p></ a ><input type='button' value='Buy Now'/></div></td></tr>";
+                    description = (string)productList["Description"];
+                    desc_mod = description.Substring(0, 150) + " ...";
+                    query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src=" + productList["Is Main Image"] + "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p class='list_title'>" + productList["Product Name"] + "</p></a><p class='list_desc'>" + desc_mod + "</p><p class='list_price'>" + "£" + productList["Price"] + "</p><input type='button' value='Buy Now'/></div></td></tr>";
                 }
+            }
+            query.InnerHtml += "</table>";
+        }
     }
 }
 

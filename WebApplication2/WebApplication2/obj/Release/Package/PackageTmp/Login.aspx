@@ -2,24 +2,34 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2"  ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
-<nav >
-<p style="text-align:right;"><a href="login.html">Login</a></p>
-<ul style="list-style:none;text-align:center;font-size:300%;">
-  <li style="display:inline;"><a href="shop.html">Home</a></li>
-  <li style="display:inline;"><a href="shop.html">Shop</a></li>
-  <li style="display:inline;"><a href="shop.html">Comission</a></li>
-  <li style="display:inline;"><a href="shop.html">Contact</a></li>
-</ul>
-</nav>
-<div style="margin-left:40px;">
+    <h2>LOGIN</h2>
   <p>Please enter your credentials in the boxes below</p>
-<p>Username:</p><asp:TextBox ID="uname" runat="server"></asp:TextBox>
+
+  <p>Username:</p><asp:TextBox ID="uname" runat="server"></asp:TextBox>
   <p>Password:</p><asp:TextBox ID="pword" runat="server"></asp:TextBox>
-  <!--<input type="submit" title="Submit" value="submit">-->
-    <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+        
+  <div runat="server" id="test"></div>
+  
+  <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+  
   <p id="details" runat="server"></p>
-    </div>
+  
+        <h2>REGISTER</h2>
+  <p>Please create your registration below</p>
+
+    <p>First Name:</p><asp:TextBox ID="f_name" runat="server"></asp:TextBox>
+    <p>Last Name:</p><asp:TextBox ID="l_name" runat="server"></asp:TextBox>
+  <p>Username:</p><asp:TextBox ID="new_user" runat="server"></asp:TextBox>
+      <p>Email:</p>
+    <asp:TextBox ID="new_email" runat="server"></asp:TextBox>
+  <p>Password:</p><asp:TextBox ID="new_pw" runat="server"></asp:TextBox>
+        
+    <div runat="server" id="test1"></div>
+      <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click1" />
+
+  
+ 
+  
+  <p id="details2" runat="server"></p>
     </asp:Content>
 

@@ -6,14 +6,85 @@
     
 <head runat="server">
 
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
     <title>Template 1</title>
-    <link href="style1.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Allura|Roboto+Condensed' rel='stylesheet'>
+    <link href="./style1.css" rel="stylesheet" type="text/css" runat="server" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="/Images1/Logo.png" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/Product Categories.aspx">HOME</a></li>
+        <li class="active"><a href="/Product-Shop.aspx">SHOP</a></li>
+        <li><a href="#">ARTISTS PROFILE</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li><p id="user" class="login" runat="server"></p></li>
+        <li><a href="/Login.aspx"><span class="glyphicon glyphicon-user"></span> LOGIN</a></li>
+        <li><a href="/cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> CART</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<!--<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>-->
+       <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <form id="form1" runat="server">           
+            <div class="main_frame"> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder></div>
+        </form>
+      <!--<div class="col-sm-8 text-left">           
+     
+        
+    
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>-->
+
+
+<footer class="container-fluid text-center">
+ <p>abiwieder@gmail.com</p>
+
+</footer>
+
+</body>
+<!--</html>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td class="shadow_left">&nbsp;</td>
@@ -21,13 +92,8 @@
 	<table width="100%" border="0" cellspacing="10" cellpadding="0">
       <tr>
         <td class="logo_area"><img src="/Images1/Logo.png" /></td>
-        <td width="300">
-          <form id="form1" name="form1" method="post" action="">
-		  	Search the website <br />
-            <input name="search_text" type="text" id="search_text" />
-            <input type="submit" name="Submit" value="Search" />
-          </form>
-          </td>
+        
+          <td><div><a id="cart" style="color:white;" href="/cart.aspx">CART</a></div></td>
       </tr>
     </table></td>
     <td class="shadow_right">&nbsp;</td>
@@ -47,19 +113,25 @@
   </tr>
   <tr>
     <td class="shadow_left">&nbsp;</td>
-    <td class="below_header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  sint occaecat cupidatat non proident, sunt in culpa qui officia  deserunt mollit anim id est laborum</td>
+    <td class="below_header">Unique Art Shop</td>
     <td class="shadow_right">&nbsp;</td>
   </tr>
   <tr>
     <td class="shadow_left">&nbsp;</td>
-    <td class="main_content_box"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <form id="form1" runat="server">
-        <div>
-            </table>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-       
-    </form>
-</body>
+    
+        
+        <td class="main_content_box">
+        
+       <!-- <table border="0" cellspacing="0" cellpadding="0">
+    
+        </table>-->
+        <!--<div class="main_content">
+          
+            <div id="main-content"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder></div>
+        
+        <p id="results" runat="server">Testing 12344566</p>
+        &nbsp;</td>
+        </table>
+</body>-->
 </html>

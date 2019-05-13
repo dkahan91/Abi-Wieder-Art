@@ -13,25 +13,25 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (SqlDataReader cat = SQLHelper.ExecuteQuery("Select ID,Name,[Category Image] From dbo.Categories"))
+            /*if (Session["User"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }*/
+
+            using (SqlDataReader cat = SQLHelper.ExecuteQuery("Select * From dbo.Categories"))
             {
                 int i = 0;
-                category.InnerHtml += "<table><tr>";
+                category.InnerHtml += "<table class='table_format'><tr>";
                 while (cat.Read())
                 {
-                    if (i < 3)
+                    if (i % 3 != 0 || i==0)
                     {
-                        category.InnerHtml += "<td><a href='Product List.aspx?ID=" + cat["ID"] + "'>" + "<img src=" + cat[2] + "></a><br><a href = 'Product List.aspx?ID=" + cat["ID"] + "'>" + cat[1] + "</a></td>";
+                        category.InnerHtml += "<td><div><a href='Product List.aspx?ID=" + cat["ID"] + "'>" + "<div class='grow pic'><img src=" + cat[2] + "></div></a><br><a href = 'Product List.aspx?ID=" + cat["ID"] + "'>" + cat[1] + "</a><p>" + cat[3] + "</p></div></td>";
                         i++;
                     }
-                    else if (i == 3)
+                    else if (i % 3 == 0 && i!=0)
                     {
-                        category.InnerHtml += "</tr><br/><tr><td><a href='Product List.aspx?ID=" + cat["ID"] + "'>" + "<img src=" + cat[2] + "></a><br><a href = 'Product List.aspx?ID=" + cat["ID"] + "'>" + cat[1] + "</a></td>";
-                        i++;
-                    }
-                    else
-                    {
-                        category.InnerHtml += "<td><a href='Product List.aspx?ID=" + cat["ID"] + "'>" + "<img src=" + cat[2] + "></a><br><a href = 'Product List.aspx?ID=" + cat["ID"] + "'>" + cat[1] + "</a></td>";
+                        category.InnerHtml += "</tr><tr><td><div><a href='Product List.aspx?ID=" + cat["ID"] + "'>" + "<div class='grow pic'><img src=" + cat[2] + "></a></div><br><a href = 'Product List.aspx?ID=" + cat["ID"] + "'>" + cat[1] + "</a><p>"+cat[3]+"</p></div></td>";
                         i++;
                     }
 

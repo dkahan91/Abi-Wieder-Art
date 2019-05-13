@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="LocalSqlServer-Web.config Connection String" description="LocalSqlServer Connection String used in web.config by the application to access the database." defaultValue="Server=DESKTOP-GLHDHL3\SQLEXPRESS;Database=TestDatabase;Connection timeout=10;Integrated Security=SSPI;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\dkaha\\source\\repos\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocalSqlServer']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="\\\\Mac\\Home\\Documents\\Computer\ training\\Web\ app\ Sep\ 2018\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocalSqlServer']/@connectionString" />
   </parameter>
-  <parameter name="GearHostSqlServer-Web.config Connection String" description="GearHostSqlServer Connection String used in web.config by the application to access the database." defaultValue="Data Source=mssql6.gear.host;Initial Catalog=paintshop;Integrated Security=False;user id=paintshop;password=Fb1s12!v2?5I" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\dkaha\\source\\repos\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GearHostSqlServer']/@connectionString" />
+  <parameter name="GearHostSqlServer-Web.config Connection String" description="GearHostSqlServer Connection String used in web.config by the application to access the database." defaultValue="Data Source=den1.mssql8.gear.host;Initial Catalog=paintshop;Integrated Security=False;user id=paintshop;password=Pl5Z_U4O54?l" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="\\\\Mac\\Home\\Documents\\Computer\ training\\Web\ app\ Sep\ 2018\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GearHostSqlServer']/@connectionString" />
   </parameter>
 </parameters>
