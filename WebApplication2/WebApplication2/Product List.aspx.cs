@@ -37,7 +37,7 @@ namespace WebApplication2
             {
                 while (productList.Read())
                 {
-                    //query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src="+ productList["Is Main Image"]+ "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p>"+ productList["Product Name"] + "</p></ a ><input type='button' value='Buy Now'/></div></td></tr>";
+                    //query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src="+ productList["Is Main Image"]+ "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p>"+ productList["Product Name"] + "</p></ a ><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><input type='button' value='Buy Now'/></a></div></td></tr>";
                     description = (string)productList["Description"];
                     desc_mod = description.Substring(0, 150) + " ...";
                     query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src=" + productList["Is Main Image"] + "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p class='list_title'>" + productList["Product Name"] + "</p></a><p class='list_desc'>" + desc_mod + "</p><p class='list_price'>" + "£" + productList["Price"] + "</p><input type='button' value='Buy Now'/></div></td></tr>";

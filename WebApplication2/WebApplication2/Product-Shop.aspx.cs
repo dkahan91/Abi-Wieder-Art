@@ -39,7 +39,7 @@ namespace WebApplication2
                         {
                             description = (string)productList["Description"];
                             desc_mod = description.Substring(0, 150)+" ...";
-                            query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src="+ productList["Is Main Image"]+ "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p class='list_title'>"+ productList["Product Name"] + "</p></a><p class='list_desc'>" + desc_mod + "</p><p class='list_price'>" + "£"+ productList["Price"] + "</p><input type='button' value='Buy Now'/></div></td></tr>";
+                            query.InnerHtml += "<tr><td><div><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><img src="+ productList["Is Main Image"]+ "></a><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><p class='list_title'>"+ productList["Product Name"] + "</p></a><p class='list_desc'>" + desc_mod + "</p><p class='list_price'>" + "£"+ productList["Price"] + "</p><a href = 'Product Page.aspx?ID=" + productList["ID"] + "'><input type='button' value='Buy Now'/></a></div></td></tr>";
                         }
                     }
                 }
@@ -70,7 +70,10 @@ namespace WebApplication2
                 }
             query.InnerHtml += "</table>";
         }
+
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
-//"<a href='Product List.aspx?'>"+ "</a>" 

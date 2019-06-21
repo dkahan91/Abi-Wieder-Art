@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
-    <title>Template 1</title>
+    <title>Abi Wieder Art</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Allura|Roboto+Condensed' rel='stylesheet'>
@@ -38,7 +38,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/Product Categories.aspx">HOME</a></li>
         <li class="active"><a href="/Product-Shop.aspx">SHOP</a></li>
-        <li><a href="#">ARTISTS PROFILE</a></li>
+        <li><a href="/artists-profile.aspx">ARTISTS PROFILE</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
